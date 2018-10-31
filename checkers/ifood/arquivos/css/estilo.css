@@ -1,0 +1,364 @@
+@font-face {
+  src: url(../fontes/osckler.otf);
+  font-family: 'osckler';
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #141526;
+}
+
+header {
+  background-color: #192132;
+  height: 30px;
+  box-shadow: 0px 0px 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2%;
+}
+
+header h1 {
+  color: cyan;
+  font-family: osckler;
+  font-size: 18pt;
+  margin-left: 7.5%;
+}
+
+header .header-int-direito {
+  display: flex;
+  width: 7%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header .header-int-direito i {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: cyan;
+  font-size: 13pt;
+}
+
+header .header-int-direito i name {
+  color: cyan;
+  font-family: osckler;
+}
+
+section {
+  width: 90%;
+  height: 100%;
+  background-color: #192132;
+  margin: auto;
+  justify-content: center;
+  margin-bottom: 2%;
+  box-shadow: 0px 0px 20px black;
+}
+
+section .titulo_interior {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section .titulo_interior h1 {
+  color: cyan;
+  font-family: osckler;
+  font-size: 19pt;
+  margin-bottom: 1%;
+  padding: 0;
+}
+
+section .titulo_interior span {
+  color: cyan;
+  font-family: osckler;
+  font-size: 14pt;
+  margin-bottom: 2%;
+}
+
+section .textarea {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin-bottom: 2%;
+}
+
+section .textarea textarea {
+  width: 60%;
+  height: 14em;
+  background-color: #233049;
+  box-shadow: 0px 0px 10px black;
+  border: none;
+  outline: none;
+  resize: none;
+  font-family: Arial;
+  font-weight: bolder;
+  font-size: 14pt;
+  color: cyan;
+  text-align: center;
+}
+
+section .informacoes_de_teste {
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2%;
+  box-shadow: 0px 0px 10px black;
+}
+
+section .informacoes_de_teste span {
+  color: cyan;
+  font-family: osckler;
+  font-size: 14pt;
+}
+
+section .informacoes_de_teste i {
+  color: black;
+  font-size: 14pt;
+  margin: 2px;
+  padding: 2px;
+  background-color: cyan;
+  border-radius: 3px;
+}
+
+section .botoes {
+  margin: auto;
+  margin-bottom: 2%;
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+section .botoes button {
+  background-color: #233049;
+  border: none;
+  box-shadow: 0px 0px 10px black;
+  width: 30%;
+  height: 50px;
+  outline: none;
+  color: cyan;
+  font-family: osckler;
+  font-size: 14pt;
+  transition: linear 0.1s all;
+  cursor: pointer;
+  user-select: none;
+}
+
+section .botoes button:active {
+  border: 5px solid cyan;
+}
+
+section .areareprovadaseraprovadas {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+section .areareprovadaseraprovadas .aprovadas {
+  width: 80%;
+  height: 60px;
+  background-color: #233049;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: cyan;
+  font-family: fantasy;
+  font-size: 18pt;
+  margin-bottom: 2%;
+  box-shadow: 0px 0px 10px black;
+  cursor: pointer;
+  user-select: none;
+}
+
+section .areareprovadaseraprovadas .reprovadas {
+  width: 80%;
+  height: 60px;
+  background-color: #233049;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: cyan;
+  font-family: fantasy;
+  font-size: 18pt;
+  margin-bottom: 2%;
+  box-shadow: 0px 0px 10px black;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* INICIO DO MODAL */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.conteudo-modal-aprovadas {
+    background-color: #192132;
+    margin: auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px cyan;
+    width: 55%;
+    height: 65%;
+    border: 1px solid cyan;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal .conteudo-modal-aprovadas .modal-aprovadas-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  border: 2px solid cyan;
+  width: 100%;
+}
+
+.modal .conteudo-modal-aprovadas .modal-aprovadas-header h1 {
+  color: cyan;
+  font-family: osckler;
+  font-size: 15pt;
+  margin-left: 2%;
+}
+
+.modal .conteudo-modal-aprovadas .modal-aprovadas-section {
+  margin: auto;
+  width: 100%;
+  height: 88%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal .conteudo-modal-aprovadas .modal-aprovadas-section .corpo-textarea {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal .conteudo-modal-aprovadas .modal-aprovadas-section .corpo-textarea textarea {
+  width: 100%;
+  height: 100%;
+  color: cyan;
+  text-align: center;
+  background-color: #233049;
+  outline: none;
+  box-shadow: 0px 0px 10px cyan;
+  border: 1px solid cyan;
+  resize: none;
+  font-family: Arial;
+  font-weight: bolder;
+  font-size: 14pt;
+}
+
+.modal .conteudo-modal-aprovadas .modal-aprovadas-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 10px cyan;
+  border: 1px solid cyan;
+  width: 100%;
+  height: 14%;
+  margin: auto;
+}
+
+.modal .conteudo-modal-aprovadas .modal-aprovadas-footer i {
+  color: black;
+  margin: 10%;
+  padding: 2%;
+  background-color: cyan;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* FIM DO MODAL */
+
+footer {
+  /*width: 100%;
+  height: 90px;
+  position: absolute;
+  bottom: -220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #192132;*/
+  display: none;
+}
+
+@media only screen and (max-width: 900px) {
+
+  section {
+    margin-top: 10%;
+    width: 100%;
+    height: 100%;
+  }
+
+  section .textarea {
+    margin-bottom: 6%;
+  }
+
+  section .textarea textarea {
+    width: 95%;
+    height: 13em;
+  }
+
+  section .informacoes_de_teste {
+    width: 95%;
+    margin-bottom: 6%;
+  }
+
+  section .informacoes_de_teste i {
+    display: none;
+  }
+
+  section .informacoes_de_teste span {
+    color: cyan;
+    font-family: osckler;
+    font-size: 8pt;
+  }
+
+  section .botoes {
+    width: 95%;
+    margin-bottom: 7%;
+  }
+
+  section .areareprovadaseraprovadas .aprovadas {
+    width: 90%;
+    margin-bottom: 5%;
+    font-family: fantasy;
+    font-weight: bolder;
+  }
+
+  section .areareprovadaseraprovadas .reprovadas {
+    width: 90%;
+    height: 60px;
+    margin-bottom: 6%;
+    font-family: fantasy;
+    font-weight: bolder;
+  }
+
+}

@@ -1,0 +1,221 @@
+@font-face {
+  src: url(osckler.otf);
+  font-family: 'osckler';
+}
+
+* {
+  font-family: osckler;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-color: #141526;
+}
+
+header {
+  background-color: #192132;
+  height: 30px;
+  box-shadow: 0px 0px 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+  box-shadow: 0px 0px 10px cyan;
+}
+
+header h1 {
+  color: cyan;
+  font-size: 20px;
+}
+
+section {
+  width: 90%;
+  background-color: #192132;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 0px 0px 20px black;
+  margin-bottom: 20px;
+}
+
+section h1 {
+  color: cyan;
+}
+
+section form {
+  width: 70%;
+  height: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+section form textarea {
+  width: 100%;
+  height: 100%;
+  background-color: #233049;
+  border: 1px solid cyan;
+  resize: none;
+  outline: none;
+  justify-content: center;
+  color: cyan;
+  font-size: 20px;
+  text-align: center;
+  font-family: Arial;
+  font-weight: bolder;
+}
+
+section input {
+  font-size: 25px;
+  color: cyan;
+  background-color: #233049;
+  margin-top: 20px;
+  width: 140px;
+  height: 50px;
+  border: 1px solid cyan;
+  outline: none;
+  margin-bottom: 10px;
+  font-family: fantasy;
+  line-height: 30px;
+  transition: linear 0.1s all;
+}
+
+section input:active {
+  background-color: #141526;
+}
+
+.aprovadas {
+  width: 90%;
+  height: 150px;
+  background-color: #233049;
+  color: cyan;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-family: fantasy;
+  box-shadow: 0px 0px 10px black;
+}
+
+.aprovadas textarea {
+  margin-top: 10px;
+  width: 99%;
+  height: 60%;
+  resize: none;
+  background-color: #233049;
+  border: 1px solid cyan;
+  outline: none;
+  color: cyan;
+  text-align: center;
+  font-family: Arial;
+  font-weight: bold;
+}
+
+.reprovadas {
+  width: 90%;
+  height: 150px;
+  background-color: #233049;
+  color: cyan;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 30px;
+  margin-bottom: 20px;
+  font-family: fantasy;
+  box-shadow: 0px 0px 10px black;
+}
+
+.reprovadas textarea {
+  margin-top: 10px;
+  width: 99%;
+  height: 60%;
+  resize: none;
+  background-color: #233049;
+  border: 1px solid cyan;
+  outline: none;
+  color: cyan;
+  text-align: center;
+  font-family: Arial;
+  font-weight: bold;
+}
+
+footer {
+  width: 90%;
+  height: auto;
+  background-color: #192132;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0px 0px 20px black;
+}
+
+footer h1 {
+  color: cyan;
+  font-family: fantasy;
+  font-weight: bolder;
+  text-align: center;
+  font-size: 17px;
+  margin: 0px;
+  padding: 0px;
+}
+
+footer a {
+  text-decoration: none;
+  color: cyan;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) {
+
+  section form {
+    width: 98%;
+    height: 30%;
+  }
+
+  section input {
+    line-height: 35px;
+    font-family: Arial;
+    font-weight: bolder;
+  }
+
+  .aprovadas {
+    font-family: Arial;
+    font-weight: bolder;
+  }
+
+  .reprovadas {
+    font-family: Arial;
+    font-weight: bolder;
+  }
+
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1024px) and (orientation: landscape) {
+
+  section form {
+    width: 98%;
+    height: 65%;
+  }
+
+  section input {
+    line-height: 35px;
+    font-family: Arial;
+    font-weight: bolder;
+  }
+
+  .aprovadas {
+    font-family: Arial;
+    font-weight: bolder;
+  }
+
+  .reprovadas {
+    font-family: Arial;
+    font-weight: bolder;
+  }
+
+}

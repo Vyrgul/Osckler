@@ -1,0 +1,1486 @@
+@font-face {
+    font-family: osckler;
+    src: url(../fonts/osckler.otf);
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    background-color: #141526;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*INICIO DO HEADER DESKTOP*/
+#header_desktop {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 30px;
+    background-color: #192132;
+    box-shadow: 0px 0px 10px cyan;
+    margin-bottom: 1%;
+}
+
+header .topo_int_esquerdo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 25%;
+}
+
+header .topo_int_esquerdo h1 {
+    color: cyan;
+    font-size: 20px;
+    font-family: osckler;
+}
+
+header .topo_int_esquerdo i {
+    color: cyan;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+header .topo_int_direito {
+    width: 10%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+header .topo_int_direito .icone_saldo {
+    color: cyan;
+    font-size: 15pt;
+    display: none;
+}
+
+header .topo_int_direito h6 {
+    margin: 0;
+    margin-right: 20%;
+    height: 55%;
+    color: cyan;
+    font-size: 11pt;
+    font-family: osckler;
+    display: none;
+}
+
+header .topo_int_direito .icone_configuracao {
+    color: #192132;
+    background-color: cyan;
+    margin-right: 10%;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+/*FIM DO HEADER DESKTOP*/
+
+/*INICIO HEADER DOS DISPOSITIVOS MOVEIS*/
+#header_mobile {
+    display: none;
+}
+
+section {
+    width: 100%;
+    height: 100%;
+    background-color: #131926;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section .menu_esquerdo {
+    width: 23%;
+    height: 100%;
+    background-color: #1C2330;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+}
+
+section .menu_esquerdo .minimizar_menu {
+    display: none;
+}
+
+section .menu_esquerdo .detalhes_esquerdo {
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: space-between;
+    box-shadow: 0px 0px 20px black;
+    user-select: none;
+}
+
+section .menu_esquerdo .detalhes_esquerdo .perfil {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: blue;*/
+    border-radius: 100%;
+}
+
+section .menu_esquerdo .detalhes_esquerdo .perfil img {
+    width: 60%;
+    height: 60%;
+    border-radius: 100%;
+}
+
+section .menu_esquerdo .detalhes_esquerdo .detalhes-perfil {
+    width: 60%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section .menu_esquerdo .detalhes_esquerdo .detalhes-perfil h1,
+section .menu_esquerdo .detalhes_esquerdo .detalhes-perfil h4 {
+    margin: 5%;
+    color: cyan;
+    font-family: osckler;
+}
+
+section .menu_esquerdo .conteudo_menu {
+    width: 100%;
+    height: 70%;
+    overflow-y: auto;
+    user-select: none;
+}
+
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb {
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background-color: cyan; 
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+}
+
+::placeholder {
+    color: teal;
+}
+
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+section .menu_esquerdo .conteudo_menu .menu {
+    margin-top: 3%;
+    margin-bottom: 2%;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0px 0px 10px black;
+    cursor: pointer;
+    transition: linear 0.2s all;
+}
+
+section .menu_esquerdo .conteudo_menu .menu:hover {
+    box-shadow: 0px 0px 10px cyan;
+}
+
+section .menu_esquerdo .conteudo_menu .menu .info_menu {
+    width: 100%;
+    height: 12%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section .menu_esquerdo .conteudo_menu .menu .info_menu i,
+section .menu_esquerdo .conteudo_menu .menu .info_menu h3 {
+    color: cyan;
+}
+
+section .menu_esquerdo .conteudo_menu .menu .info_menu .icone_checker {
+    margin-left: 3%;
+}
+
+section .menu_esquerdo .conteudo_menu .menu .info_menu .icone_dropdown {
+    margin-right: 3%;
+}
+
+section .menu_esquerdo .conteudo_menu .menu .info_menu h3 {
+    font-family: osckler;
+}
+
+section .menu_esquerdo .conteudo_menu .menu .dropdown {
+    width: 100%;
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transition: linear 0.2s all;
+    padding-top: 3%;
+}
+
+section .menu_esquerdo .conteudo_menu .menu .dropdown a {
+    width: 95%;
+    height: 40px;
+    box-shadow: 0px 0px 10px black;
+    margin-bottom: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: cyan;
+    font-family: osckler;
+    transition: linear 0.1s all;
+}
+
+section .menu_esquerdo .conteudo_menu .menu .dropdown a:hover {
+    box-shadow: 0px 0px 5px cyan;
+}
+
+section .menu_direito {
+    width: 75%;
+    height: 100%;
+    background-color: #1C2330;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+/*CRIAR USUARIO ESTILO*/
+section .menu_direito .criar_usuario {
+    width: 100%;
+    height: 100%;
+    /*background-color: blue;*/
+    display: flex;
+    flex-direction: column;
+}
+
+section .menu_direito .criar_usuario .titulo {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-color: red;*/
+}
+
+section .menu_direito .criar_usuario .titulo h1 {
+    color: cyan;
+    font-family: osckler;
+}
+
+section .menu_direito .criar_usuario .formulario {
+    width: 100%;
+    height: 100%;
+    /*background-color: green;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 3px solid cyan;
+    font-family: osckler;
+}
+
+section .menu_direito .criar_usuario .formulario .formulario_int {
+    width: 100%;
+    height: 90%;
+    /*background-color: teal;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section .menu_direito .criar_usuario .formulario .formulario_int form {
+    margin-top: 2%;
+    width: 100%;
+    height: 100%;
+    /*background-color: aquamarine;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section .menu_direito .criar_usuario .formulario .formulario_int form input {
+    width: 80%;
+    height: 7%;
+    color: cyan;
+    border: 2px solid cyan;
+    border-radius: 5px;
+    padding-left: 3%;
+    outline: none;
+    background-color: #1C2330;
+    box-shadow: 0px 0px 15px black;
+    transition: linear 0.2s all;
+}
+
+section .menu_direito .criar_usuario .formulario .formulario_int form input:hover {
+    box-shadow: 0px 0px 10px cyan;
+}
+
+#inputFile {
+    display: none;
+}
+
+section .menu_direito .criar_usuario .formulario .formulario_int form label {
+    width: 80%;
+    height: 6%;
+    border: 2px solid cyan;
+    box-shadow: 0px 0px 10px black;
+    border-radius: 5px;
+    color: cyan;
+    font-family: osckler;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: linear 0.2s all;
+    margin-bottom: 1%;
+}
+
+section .menu_direito .criar_usuario .formulario .formulario_int form label:active {
+    background-color: #131926;
+}
+
+section .menu_direito .criar_usuario .formulario .formulario_int form label:hover {
+    box-shadow: 0px 0px 10px cyan;
+}
+
+section .menu_direito .criar_usuario .formulario .formulario_int form select {
+    width: 80%;
+    height: 7%;
+    color: cyan;
+    border: 2px solid cyan;
+    border-radius: 5px;
+    padding-left: 3%;
+    outline: none;
+    background-color: #1C2330;
+    box-shadow: 0px 0px 15px black;
+    transition: linear 0.2s all;
+}
+
+section .menu_direito .criar_usuario .formulario .formulario_int form select:hover {
+    box-shadow: 0px 0px 10px cyan;
+}
+
+section .menu_direito .criar_usuario .formulario .formulario_int form .borda-topo {
+    border-top: 3px solid cyan;
+    width: 100%;
+}
+
+section .menu_direito .criar_usuario .formulario .formulario_int form button {
+    width: 40%;
+    height: 10%;
+    background-color: #1C2330;
+    border: 2px solid cyan;
+    border-radius: 10px;
+    color: cyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: osckler;
+    font-size: 14pt;
+    transition: linear 0.1s all;
+    box-shadow: 0px 0px 15px black;
+    outline: none;
+}
+
+section .menu_direito .criar_usuario .formulario .formulario_int form button:hover {
+    box-shadow: 0px 0px 10px cyan;
+}
+
+section .menu_direito .criar_usuario .formulario .formulario_int form button:active {
+    border: 5px solid cyan;
+    border-radius: 10px;
+}
+
+/*INICIO EDITAR USUÁRIO*/
+section .menu_direito .editar_usuario {
+    display: none;
+    width: 100%;
+    height: 100%;
+    /*background-color: gray;*/
+}
+
+section .menu_direito .editar_usuario .titulo {
+    /*background-color: blue;*/
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .menu_direito .editar_usuario .titulo h1 {
+    margin: 0;
+    color: cyan;
+    font-family: osckler;
+}
+
+section .menu_direito .editar_usuario .pesquisar_nome {
+    margin-top: 3%;
+    width: auto;
+    height: auto;
+    /*background-color: red;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+section .menu_direito .editar_usuario .pesquisar_nome i {
+    width: 4%;
+    height: 6%;
+    background-color: cyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+
+}
+
+section .menu_direito .editar_usuario .pesquisar_nome input {
+    background-color: #1C2330;
+    width: 50%;
+    height: 6%;
+    border: 1px solid cyan;
+    outline: none;
+    color: cyan;
+    font-family: osckler;
+    font-size: 14pt;
+    padding-left: 1%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+
+}
+
+section .menu_direito .editar_usuario #borda {
+    width: 98%;
+    border: 2px solid cyan;
+    margin: auto;
+    margin-top: 1%;
+    border-radius: 100%;
+}
+
+section .menu_direito .editar_usuario .editar_detalhes {
+    margin-top: 1%;
+    width: 100%;
+    height: 60%;
+    /*background-color: blue;*/
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section .menu_direito .editar_usuario .editar_detalhes .esquerdo {
+    width: 50%;
+    height: 100%;
+    /*background-color: azure;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /*border-right: 1px solid cyan;*/
+}
+
+section .menu_direito .editar_usuario .editar_detalhes .esquerdo .nome {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+section .menu_direito .editar_usuario .editar_detalhes .esquerdo .nome i {
+    width: 10%;
+    height: 10%;
+    background-color: cyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+
+section .menu_direito .editar_usuario .editar_detalhes .esquerdo .nome input {
+    width: 70%;
+    background-color: #1C2330;
+    border: 1px solid cyan;
+    outline: none;
+    padding-left: 2%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: cyan;
+    font-family: osckler;
+    font-size: 14pt;
+}
+
+section .menu_direito .editar_usuario .editar_detalhes .esquerdo .nome_de_usuario {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+section .menu_direito .editar_usuario .editar_detalhes .esquerdo .nome_de_usuario i {
+    width: 10%;
+    height: 10%;
+    background-color: cyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+
+section .menu_direito .editar_usuario .editar_detalhes .esquerdo .nome_de_usuario input {
+    width: 70%;
+    background-color: #1C2330;
+    border: 1px solid cyan;
+    outline: none;
+    padding-left: 2%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: cyan;
+    font-family: osckler;
+    font-size: 14pt;
+}
+
+section .menu_direito .editar_usuario .editar_detalhes .esquerdo .foto_de_perfil {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+section .menu_direito .editar_usuario .editar_detalhes .esquerdo .foto_de_perfil i {
+    width: 10%;
+    height: 10%;
+    background-color: cyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+
+section .menu_direito .editar_usuario .editar_detalhes .esquerdo .foto_de_perfil label {
+    width: 70%;
+    background-color: #1C2330;
+    border: 1px solid cyan;
+    outline: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: cyan;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: osckler;
+    font-size: 14pt;
+    padding-left: 2%;
+    cursor: pointer;
+}
+
+section .menu_direito .editar_usuario .editar_detalhes .esquerdo .foto_de_perfil label input[type="file"] {
+    display: none;
+}
+
+section .menu_direito .editar_usuario .editar_detalhes .direito {
+    width: 50%;
+    height: 100%;
+    /*background-color: green;*/
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    /*border-left: 1px solid cyan;*/
+}
+
+section .menu_direito .editar_usuario .editar_detalhes .direito .email {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+section .menu_direito .editar_usuario .editar_detalhes .direito .email i {
+    width: 10%;
+    height: 10%;
+    background-color: cyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+
+section .menu_direito .editar_usuario .editar_detalhes .direito .email input {
+    width: 70%;
+    background-color: #1C2330;
+    border: 1px solid cyan;
+    outline: none;
+    padding-left: 2%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: cyan;
+    font-family: osckler;
+    font-size: 14pt;
+}
+
+section .menu_direito .editar_usuario .editar_detalhes .direito .senha {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+section .menu_direito .editar_usuario .editar_detalhes .direito .senha i {
+    width: 10%;
+    height: 10%;
+    background-color: cyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+
+section .menu_direito .editar_usuario .editar_detalhes .direito .senha input {
+    width: 70%;
+    background-color: #1C2330;
+    border: 1px solid cyan;
+    outline: none;
+    padding-left: 2%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: cyan;
+    font-family: osckler;
+    font-size: 14pt;
+}
+
+section .menu_direito .editar_usuario .editar_detalhes .direito .creditos {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+section .menu_direito .editar_usuario .editar_detalhes .direito .creditos i {
+    width: 10%;
+    height: 10%;
+    background-color: cyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+
+section .menu_direito .editar_usuario .editar_detalhes .direito .creditos input {
+    width: 70%;
+    background-color: #1C2330;
+    border: 1px solid cyan;
+    outline: none;
+    padding-left: 2%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: cyan;
+    font-family: osckler;
+    font-size: 14pt;
+}
+
+section .menu_direito .editar_usuario .footer {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .menu_direito .editar_usuario .footer button {
+    width: 40%;
+    height: 70%;
+    border: 1px solid cyan;
+    background-color: #1C2330;
+    color: cyan;
+    font-family: osckler;
+    font-size: 16pt;
+    outline: none;
+    border-radius: 10px;
+    transition: linear 0.1s all;
+}
+
+section .menu_direito .editar_usuario .footer button:active {
+    border: 5px solid cyan;
+    border-radius: 15px;
+    font-size: 14pt;
+}
+/*FIM EDITAR USUÁRIO*/
+
+/*INICIO DELETAR USUÁRIO*/
+section .menu_direito .deletar_usuario {
+    width: 100%;
+    height: 100%;
+    /*background-color: blue;*/
+    display: none;
+    flex-direction: column;
+}
+
+section .menu_direito .deletar_usuario .deletar_usuario_topo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 10%;
+    /*background-color: red;*/
+}
+
+section .menu_direito .deletar_usuario .deletar_usuario_topo h1 {
+    color: cyan;
+    font-family: osckler;
+    font-size: 18pt;
+}
+
+section .menu_direito .deletar_usuario .borda_deletar_usuario {
+    width: 98%;
+    border: 1px solid cyan;
+    border-radius: 100%;
+    margin-left: 1%;
+}
+
+section .menu_direito .deletar_usuario .pesquisar_usuario {
+    margin-top: 5%;
+    width: 100%;
+    height: 10%;
+    /*background-color: green;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .menu_direito .deletar_usuario .pesquisar_usuario i {
+    width: 5%;
+    height: 70%;
+    background-color: cyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+
+section .menu_direito .deletar_usuario .pesquisar_usuario input {
+    width: 50%;
+    height: 70%;
+    background-color: #1C2330;
+    border: 1px solid cyan;
+    outline: none;
+    padding-left: 2%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: cyan;
+    font-family: osckler;
+    font-size: 14pt;
+}
+
+section .menu_direito .deletar_usuario .deletar_usuario_botao {
+    width: 100%;
+    height: 15%;
+    /*background-color: blue;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .menu_direito .deletar_usuario .deletar_usuario_botao button {
+    width: 30%;
+    height: 50%;
+    border: 1px solid cyan;
+    background-color: #1C2330;
+    color: cyan;
+    font-family: osckler;
+    font-size: 16pt;
+    outline: none;
+    border-radius: 10px;
+    transition: linear 0.1s all;
+}
+
+section .menu_direito .deletar_usuario .deletar_usuario_botao button:active {
+    border: 5px solid cyan;
+    border-radius: 15px;
+    font-size: 14pt;
+}
+/*FIM DELETAR USUÁRIO*/
+
+/*INICIO ADICIONAR CHECKER*/
+section .adicionar_checker {
+    display: none;
+    width: 100%;
+    height: 100%;
+    /*background-color: blue;*/
+    overflow: hidden;
+}
+
+section .adicionar_checker .topo {
+    width: 100%;
+    height: 10%;
+    /*background-color: red;*/
+}
+
+section .adicionar_checker .topo h1 {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: cyan;
+    font-family: osckler;
+    font-size: 18pt;
+}
+
+section .adicionar_checker .formulario {
+    width: 100%;
+    height: 60%;
+    /*background-color: green;*/
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    user-select: none;
+}
+
+section .adicionar_checker .borda {
+    width: 98%;
+    border: 1px solid cyan;
+    border-radius: 100%;
+    margin: auto;
+}
+
+section .adicionar_checker .formulario .nome {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+section .adicionar_checker .formulario .nome i {
+    width: 5%;
+    background-color: cyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+
+section .adicionar_checker .formulario .nome input {
+    width: 60%;
+    background-color: #1C2330;
+    border: 1px solid cyan;
+    outline: none;
+    padding-left: 2%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: cyan;
+    font-family: osckler;
+    font-size: 14pt;
+}
+
+section .adicionar_checker .formulario .tipo {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+section .adicionar_checker .formulario .tipo i {
+    width: 5%;
+    background-color: cyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+
+section .adicionar_checker .formulario .tipo input {
+    width: 60%;
+    background-color: #1C2330;
+    border: 1px solid cyan;
+    outline: none;
+    padding-left: 2%;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: cyan;
+    font-family: osckler;
+    font-size: 14pt;
+}
+
+section .adicionar_checker .formulario .selecionar_arquivo {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    /*background-color: teal;*/
+}
+
+section .adicionar_checker .formulario .selecionar_arquivo i {
+    width: 5%;
+    background-color: cyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+
+section .adicionar_checker .formulario .selecionar_arquivo label {
+    width: 58%;
+    background-color: #1C2330;
+    border: 1px solid cyan;
+    outline: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: cyan;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: osckler;
+    font-size: 14pt;
+    padding-left: 2%;
+    cursor: pointer;
+}
+
+section .adicionar_checker .formulario input {
+    width: 50%;
+}
+
+section .adicionar_checker .confirmar_dados {
+    width: 100%;
+    height: 30%;
+    /*background-color: gray;*/
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+section .adicionar_checker .confirmar_dados button {
+    width: 30%;
+    height: 25%;
+    border: 1px solid cyan;
+    background-color: #1C2330;
+    color: cyan;
+    font-family: osckler;
+    font-size: 16pt;
+    outline: none;
+    border-radius: 10px;
+    transition: linear 0.1s all;
+}
+
+section .adicionar_checker .confirmar_dados button:active {
+    border: 5px solid cyan;
+    border-radius: 15px;
+    font-size: 14pt;
+}
+/*FIM ADICIONAR CHECKER*/
+
+/*INICIO DELETAR CHECKER*/
+section .deletar_checker {
+    width: 100%;
+    height: 100%;
+    /*background-color: blue;*/
+    display: none;
+    flex-direction: column;
+}
+
+section .deletar_checker .topo {
+    width: 100%;
+    height: 10%;
+    /*background-color: red;*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section .deletar_checker .topo h1 {
+    color: cyan;
+    font-family: osckler;
+    font-size: 18pt;
+}
+
+section .deletar_checker .meio {
+    margin-top: 1%;
+    width: 100%;
+    height: 70%;
+    /*background-color: gray;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section .deletar_checker .meio .selecionar_checker {
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+}
+
+section .deletar_checker .meio .selecionar_checker i {
+    width: 5%;
+    background-color: cyan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10%;
+    border-bottom-left-radius: 10%;
+}
+
+section .deletar_checker .meio .selecionar_checker select {
+    width: 58%;
+    background-color: #1C2330;
+    border: 1px solid cyan;
+    outline: none;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    color: cyan;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-family: osckler;
+    font-size: 14pt;
+    padding-left: 2%;
+    cursor: pointer;
+}
+
+section .deletar_checker .meio .botão_deletar_checker {
+    width: 100%;
+    height: 30%;
+    /*background-color: gray;*/
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+section .deletar_checker .meio .botão_deletar_checker button {
+    width: 30%;
+    height: 40%;
+    border: 1px solid cyan;
+    background-color: #1C2330;
+    color: cyan;
+    font-family: osckler;
+    font-size: 16pt;
+    outline: none;
+    border-radius: 10px;
+    transition: linear 0.1s all;
+}
+
+section .deletar_checker .meio .botão_deletar_checker button:active {
+    border: 5px solid cyan;
+    border-radius: 15px;
+    font-size: 14pt;
+}
+/*FIM DELETAR CHECKER*/
+
+/*INICIO MODAL CONFIGURAÇÕES*/
+.modal {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(28, 35, 48, 0.9);
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal .conteudo-modal {
+    width: 50%;
+    height: 50%;
+    background-color: #192132;
+    box-shadow: 0px 0px 20px teal;
+    border: 3px solid aqua;
+}
+
+/* INICIO RESPONSIVO (GALAXY S5) */
+@media only screen and (min-width: 320px) and (max-width: 900px) {
+    body {
+        margin: 0;
+        padding: 0;
+    }
+
+    #header_desktop {
+        display: none;
+    }
+
+    #header_mobile {
+        width: 100%;
+        height: 15%;
+        background-color: #192132;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2px;
+    }
+
+    #header_mobile .topo {
+        /*background-color: red;*/
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border-bottom: 1px solid cyan;
+    }
+
+    #header_mobile .topo h1 {
+        font-family: osckler;
+        color: cyan;
+        font-size: 16pt;
+    }
+
+    #header_mobile .bottom {
+        width: 100%;
+        height: 50%;
+        /*background-color: teal;*/
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: cyan;
+    }
+
+    #header_mobile .bottom i {
+        padding: 1%;
+        font-size: 18pt;
+    }
+
+    #header_mobile .bottom .icone_configuracao {
+        color: #192132;
+        background-color: cyan;
+        margin-right: 1%;
+        padding-left: 3%;
+        padding-right: 3%;
+        padding-top: 1%;
+        padding-bottom: 1%;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+
+    section .menu_esquerdo {
+        display: none;
+        width: 75%;
+        position: absolute;
+    }
+
+    section .menu_esquerdo .minimizar_menu {
+        margin-top: 5%;
+        width: 100%;
+        height: 15%;
+        /*background-color: blue;*/
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+    }
+
+    section .menu_esquerdo .minimizar_menu i {
+        font-size: 14pt;
+        color: black;
+        padding: 5%;
+        background-color: cyan;
+        border-radius: 5px;
+        margin-right: 2%;
+    }
+
+    section .menu_direito {
+        width: 100%;
+    }
+
+    section .menu_direito .criar_usuario .titulo h1 {
+        font-size: 17pt;
+    }
+
+    section .menu_direito .criar_usuario .formulario .formulario_int form button {
+        width: 70%;
+    }
+
+    section .menu_direito .criar_usuario .formulario .formulario_int form button:active {
+        font-size: 12pt;
+    }
+
+    /*S5 EDITAR USUARIO*/
+    section .menu_direito .editar_usuario .titulo h1 {
+        font-size: 17pt;
+    }
+
+    section .menu_direito .editar_usuario .pesquisar_nome i {
+        width: 10%;
+    }
+
+    section .menu_direito .editar_usuario .editar_detalhes .esquerdo .nome i {
+        width: 20%;
+    }
+
+    section .menu_direito .editar_usuario .editar_detalhes .esquerdo .nome_de_usuario i {
+        width: 20%;
+    }
+
+    section .menu_direito .editar_usuario .editar_detalhes .esquerdo .foto_de_perfil i {
+        width: 20%;
+    }
+
+    section .menu_direito .editar_usuario .editar_detalhes .direito .email i {
+        width: 20%;
+    }
+
+    section .menu_direito .editar_usuario .editar_detalhes .direito .senha i {
+        width: 20%;
+    }
+
+    section .menu_direito .editar_usuario .editar_detalhes .direito .creditos i {
+        width: 20%;
+    }
+
+    #borda {
+        margin-top: 5%;
+    }
+    /*S5 FIM EDITAR USUARIO*/
+
+    /*S5 INICIO DELETAR USUARIO*/
+    section .menu_direito .deletar_usuario .deletar_usuario_topo h1 {
+        font-size: 14pt;
+    }
+
+    section .menu_direito .deletar_usuario .pesquisar_usuario i {
+        width: 12%;
+    }
+    /*S5 FIM DELETAR USUARIO*/
+
+    /*S5 INICIO ADICIONAR CHECKER*/
+    section .adicionar_checker .topo h1 {
+        font-size: 17pt;
+    }
+
+    section .adicionar_checker .formulario .nome i {
+        width: 10%;
+    }
+
+    section .adicionar_checker .formulario .tipo i {
+        width: 10%;
+    }
+
+    section .adicionar_checker .formulario .selecionar_arquivo i {
+        width: 10%;
+    }
+
+    section .adicionar_checker .confirmar_dados button {
+        width: 60%;
+    }
+
+    section .adicionar_checker .formulario .selecionar_arquivo label {
+        width: 70%;
+    }
+
+    section .adicionar_checker .formulario .nome input {
+        width: 73%;
+    }
+
+    section .adicionar_checker .formulario .tipo input {
+        width: 73%;
+    }
+    /*S5 FIM ADICIONAR CHECKER*/
+
+    /*INICIO DELETAR CHECKER*/
+    section .deletar_checker .topo h1 {
+        font-size: 17pt;
+    }
+
+    section .deletar_checker .meio .selecionar_checker select {
+        width: 73%;
+    }
+
+    section .deletar_checker .meio .selecionar_checker i {
+        width: 10%;
+    }
+
+    section .deletar_checker .meio .botão_deletar_checker button {
+        width: 60%;
+    }
+    /*FIM DELETAR CHECKER*/
+}
+
+@media only screen and (orientation: landscape) and (max-width: 900px) {
+    #header_desktop {
+        display: none;
+    }
+
+    #header_mobile {
+        width: 100%;
+        height: 25%;
+        background-color: #192132;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 2px;
+    }
+
+    #header_mobile .topo {
+        /*background-color: red;*/
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        border-bottom: 1px solid cyan;
+    }
+
+    #header_mobile .topo h1 {
+        font-family: osckler;
+        color: cyan;
+        font-size: 16pt;
+    }
+
+    #header_mobile .bottom {
+        width: 100%;
+        height: 50%;
+        /*background-color: teal;*/
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        color: cyan;
+    }
+
+    #header_mobile .bottom i {
+        padding: 1%;
+        font-size: 18pt;
+    }
+
+    section .menu_esquerdo {
+        margin-top: 49%;
+        width: 60%;
+        display: none;
+        height: 900px;
+        position: absolute;
+    }
+
+    section .menu_esquerdo .detalhes_esquerdo {
+        height: 20%;
+    }
+
+    section .menu_esquerdo .conteudo_menu .menu .info_menu {
+        height: 15%;
+    }
+
+    section .menu_direito {
+        margin-top: 2%;
+        width: 100%;
+    }
+
+    section .menu_direito .criar_usuario .titulo h1 {
+        font-size: 17pt;
+    }
+
+    section .menu_direito .criar_usuario .formulario {
+        height: auto;
+    }
+
+    section .menu_direito .criar_usuario {
+        height: 900px;
+        background-color: #1B222F;
+    }
+
+    section .menu_direito .editar_usuario {
+        height: 900px;
+        background-color: #1B222F;
+    }
+
+    section .menu_direito .editar_usuario .titulo h1 {
+        font-size: 17pt;
+    }
+
+    section .menu_direito .editar_usuario .pesquisar_nome i {
+        width: 10%;
+    }
+
+    section .menu_direito .editar_usuario .editar_detalhes .esquerdo .nome i {
+        width: 20%;
+    }
+
+    section .menu_direito .editar_usuario .editar_detalhes .direito .email i {
+        width: 20%;
+    }
+
+    section .menu_direito .editar_usuario .editar_detalhes .esquerdo .nome_de_usuario i {
+        width: 20%;
+    }
+
+    section .menu_direito .editar_usuario .editar_detalhes .direito .senha i {
+        width: 20%;
+    }
+
+    section .menu_direito .editar_usuario .editar_detalhes .esquerdo .foto_de_perfil i {
+        width: 20%;
+    }
+
+    section .menu_direito .editar_usuario .editar_detalhes .direito .creditos i {
+        width: 20%;
+    }
+
+    section .menu_direito .deletar_usuario {
+        height: 900px;
+        background-color: #1B222F;
+    }
+
+    section .menu_direito .deletar_usuario .pesquisar_usuario i {
+        width: 10%;
+    }
+
+    section .adicionar_checker {
+        height: 900px;
+        background-color: #1B222F;
+    }
+
+    section .adicionar_checker .formulario .nome i {
+        width: 10%;
+    }
+
+    section .adicionar_checker .formulario .tipo i {
+        width: 10%;
+    }
+
+    section .adicionar_checker .formulario .selecionar_arquivo i {
+        width: 10%;
+    }
+
+    section .deletar_checker {
+        height: 900px;
+        background-color: #1B222F;
+    }
+
+    section .deletar_checker .meio .selecionar_checker i {
+        width: 10%;
+    }
+
+    section .deletar_checker .meio .botão_deletar_checker {
+        height: 85%;
+    }
+
+    section .deletar_checker .meio .botão_deletar_checker button {
+        width: 40%;
+        height: 15%;
+    }
+
+}
+/* FIM RESPONSIVO (GALAXY S5) */
+
+
+/* INICIO RESPONSIVO (J7 PRIME SM-G610M) */
+@media only screen and (orientation: landscape) and (max-width: 1280px) {
+    section .menu_esquerdo {
+        margin-top: 38%;
+    }
+}
+/* FIM RESPONSIVO (J7 PRIME SM-G610M) */
